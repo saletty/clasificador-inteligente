@@ -1,7 +1,14 @@
-using Microsoft.EntityFrameworkCore;
-using ClasificadorComents.Data;// el namespace donde est� AppDbContext
+﻿using Microsoft.EntityFrameworkCore;
+using ClasificadorComents.Data;// el namespace donde está AppDbContext
 
 var builder = WebApplication.CreateBuilder(args);
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(int.Parse(port));
+});
+
+builder.Environment.EnvironmentName = "Development";
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
@@ -26,23 +33,36 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+app.UseStaticFiles(); // Esta línea es necesaria para servir archivos .html
+
+// Redirigir la raíz "/" a "/paginas/login.html"
+app.Use(async (context, next) =>
+{
+    if (context.Request.Path == "/")
+    {
+        context.Response.Redirect("/paginas/login.html");
+        return;
+    }
+    await next();
+});
 // Usar CORS
 app.UseCors("PermitirFrontend");
 
-// Configure the HTTP request pipeline.
+// Configurar middleware condicionalmente
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    app.UseHttpsRedirection(); // Solo en desarrollo
 }
-
-app.UseHttpsRedirection();
-
+else
+{
+    // app.UseHttpsRedirection(); ← evitamos esto para no romperlo en Render
+    // En producción (ej. Docker en Render), no se redirige manualmente a HTTPS
+}
 app.UseAuthorization();
 
-app.UseStaticFiles(); // Esta l�nea es necesaria para servir archivos .html
-
-app.MapControllers();
+app.MapControllers(); // Para la API backend
 
 app.Run();
 

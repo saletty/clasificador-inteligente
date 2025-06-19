@@ -14,7 +14,7 @@ WORKDIR /app
 COPY --from=build /app/out .
 
 # Copiar el frontend al directorio wwwroot (esto es importante)
-COPY wwwroot/paginas /app/wwwroot/paginas
+COPY wwwroot /app/wwwroot
 
 
 ENTRYPOINT ["dotnet", "ClasificadorComents.dll"]
