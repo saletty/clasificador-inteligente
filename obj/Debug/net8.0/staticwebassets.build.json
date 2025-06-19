@@ -1,12 +1,228 @@
 {
   "Version": 1,
-  "Hash": "bC/kcn3Wq8TmMSGHfCgxQgv7/lzCYs0cDKe89aoebhs=",
+  "Hash": "R9NI/9CU+e01Dd8H30m+D3Ej8iwn2jOO5Ec1E8Qh7XU=",
   "Source": "ClasificadorComents",
   "BasePath": "_content/ClasificadorComents",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "ClasificadorComents\\wwwroot",
+      "Source": "ClasificadorComents",
+      "ContentRoot": "C:\\Users\\Personal\\Documents\\PROYECTO ENSAMBLADOR\\visual\\Nueva carpeta\\ClasificadorComents\\ClasificadorComents\\wwwroot\\",
+      "BasePath": "_content/ClasificadorComents",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Personal\\Documents\\PROYECTO ENSAMBLADOR\\visual\\Nueva carpeta\\ClasificadorComents\\ClasificadorComents\\wwwroot\\paginas\\faq.html",
+      "SourceId": "ClasificadorComents",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Personal\\Documents\\PROYECTO ENSAMBLADOR\\visual\\Nueva carpeta\\ClasificadorComents\\ClasificadorComents\\wwwroot\\",
+      "BasePath": "_content/ClasificadorComents",
+      "RelativePath": "paginas/faq#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zhm1fs4qjt",
+      "Integrity": "2bjOyL8yDJbKM9vazE3gtqTKoqUMQ0m1L/+mN0+OXj0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\paginas\\faq.html"
+    },
+    {
+      "Identity": "C:\\Users\\Personal\\Documents\\PROYECTO ENSAMBLADOR\\visual\\Nueva carpeta\\ClasificadorComents\\ClasificadorComents\\wwwroot\\paginas\\login.html",
+      "SourceId": "ClasificadorComents",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Personal\\Documents\\PROYECTO ENSAMBLADOR\\visual\\Nueva carpeta\\ClasificadorComents\\ClasificadorComents\\wwwroot\\",
+      "BasePath": "_content/ClasificadorComents",
+      "RelativePath": "paginas/login#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "14uuehrrhg",
+      "Integrity": "D+pFp0h6Vz6rHo9HbMAUHslKOIcm88jWY5hXh310L6o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\paginas\\login.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "paginas/faq.html",
+      "AssetFile": "C:\\Users\\Personal\\Documents\\PROYECTO ENSAMBLADOR\\visual\\Nueva carpeta\\ClasificadorComents\\ClasificadorComents\\wwwroot\\paginas\\faq.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3619"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2bjOyL8yDJbKM9vazE3gtqTKoqUMQ0m1L/+mN0+OXj0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 01:56:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2bjOyL8yDJbKM9vazE3gtqTKoqUMQ0m1L/+mN0+OXj0="
+        }
+      ]
+    },
+    {
+      "Route": "paginas/faq.zhm1fs4qjt.html",
+      "AssetFile": "C:\\Users\\Personal\\Documents\\PROYECTO ENSAMBLADOR\\visual\\Nueva carpeta\\ClasificadorComents\\ClasificadorComents\\wwwroot\\paginas\\faq.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3619"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2bjOyL8yDJbKM9vazE3gtqTKoqUMQ0m1L/+mN0+OXj0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 01:56:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zhm1fs4qjt"
+        },
+        {
+          "Name": "label",
+          "Value": "paginas/faq.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2bjOyL8yDJbKM9vazE3gtqTKoqUMQ0m1L/+mN0+OXj0="
+        }
+      ]
+    },
+    {
+      "Route": "paginas/login.14uuehrrhg.html",
+      "AssetFile": "C:\\Users\\Personal\\Documents\\PROYECTO ENSAMBLADOR\\visual\\Nueva carpeta\\ClasificadorComents\\ClasificadorComents\\wwwroot\\paginas\\login.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2409"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D+pFp0h6Vz6rHo9HbMAUHslKOIcm88jWY5hXh310L6o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 01:24:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "14uuehrrhg"
+        },
+        {
+          "Name": "label",
+          "Value": "paginas/login.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-D+pFp0h6Vz6rHo9HbMAUHslKOIcm88jWY5hXh310L6o="
+        }
+      ]
+    },
+    {
+      "Route": "paginas/login.html",
+      "AssetFile": "C:\\Users\\Personal\\Documents\\PROYECTO ENSAMBLADOR\\visual\\Nueva carpeta\\ClasificadorComents\\ClasificadorComents\\wwwroot\\paginas\\login.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2409"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D+pFp0h6Vz6rHo9HbMAUHslKOIcm88jWY5hXh310L6o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 01:24:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-D+pFp0h6Vz6rHo9HbMAUHslKOIcm88jWY5hXh310L6o="
+        }
+      ]
+    }
+  ]
 }

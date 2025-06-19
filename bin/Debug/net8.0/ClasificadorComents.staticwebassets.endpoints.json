@@ -1,5 +1,170 @@
 {
   "Version": 1,
   "ManifestType": "Build",
-  "Endpoints": []
+  "Endpoints": [
+    {
+      "Route": "paginas/faq.html",
+      "AssetFile": "paginas/faq.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3619"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2bjOyL8yDJbKM9vazE3gtqTKoqUMQ0m1L/+mN0+OXj0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 01:56:50 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2bjOyL8yDJbKM9vazE3gtqTKoqUMQ0m1L/+mN0+OXj0="
+        }
+      ]
+    },
+    {
+      "Route": "paginas/faq.zhm1fs4qjt.html",
+      "AssetFile": "paginas/faq.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3619"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2bjOyL8yDJbKM9vazE3gtqTKoqUMQ0m1L/+mN0+OXj0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 01:56:50 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zhm1fs4qjt"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2bjOyL8yDJbKM9vazE3gtqTKoqUMQ0m1L/+mN0+OXj0="
+        },
+        {
+          "Name": "label",
+          "Value": "paginas/faq.html"
+        }
+      ]
+    },
+    {
+      "Route": "paginas/login.14uuehrrhg.html",
+      "AssetFile": "paginas/login.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2409"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D+pFp0h6Vz6rHo9HbMAUHslKOIcm88jWY5hXh310L6o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 01:24:53 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "14uuehrrhg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-D+pFp0h6Vz6rHo9HbMAUHslKOIcm88jWY5hXh310L6o="
+        },
+        {
+          "Name": "label",
+          "Value": "paginas/login.html"
+        }
+      ]
+    },
+    {
+      "Route": "paginas/login.html",
+      "AssetFile": "paginas/login.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2409"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D+pFp0h6Vz6rHo9HbMAUHslKOIcm88jWY5hXh310L6o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 01:24:53 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-D+pFp0h6Vz6rHo9HbMAUHslKOIcm88jWY5hXh310L6o="
+        }
+      ]
+    }
+  ]
 }

@@ -40,6 +40,9 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+app.UseStaticFiles(); // Esta línea es necesaria para servir archivos .html
+
 app.MapControllers();
 
 app.Run();
+
