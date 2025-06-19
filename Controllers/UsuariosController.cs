@@ -30,7 +30,9 @@ namespace ClasificadorComents.Controllers
             if (usuario == null)
                 return Unauthorized("Credenciales inválidas");
 
-            return Ok(new { mensaje = "Inicio de sesión exitoso", usuarioId = usuario.Registro });
+            return Ok(new { mensaje = "Inicio de sesión exitoso",
+                            usuarioId = usuario.Registro, 
+                            nombreCompleto = usuario.Nombre });
         }
         
     }

@@ -3,6 +3,51 @@
   "ManifestType": "Build",
   "Endpoints": [
     {
+      "Route": "paginas/faq.1rncmcszrm.html",
+      "AssetFile": "paginas/faq.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3592"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"w/Y3l8O51greLxxSPX74htnJ7x2nzcWXpc4ab8zwSwE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 20:34:43 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1rncmcszrm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-w/Y3l8O51greLxxSPX74htnJ7x2nzcWXpc4ab8zwSwE="
+        },
+        {
+          "Name": "label",
+          "Value": "paginas/faq.html"
+        }
+      ]
+    },
+    {
       "Route": "paginas/faq.html",
       "AssetFile": "paginas/faq.html",
       "Selectors": [],
@@ -17,7 +62,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7215"
+          "Value": "3592"
         },
         {
           "Name": "Content-Type",
@@ -25,62 +70,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1YxHKDEuDwfQNGC8eSBYIOMsK7AY+MGUDS9xW4O4l+8=\""
+          "Value": "\"w/Y3l8O51greLxxSPX74htnJ7x2nzcWXpc4ab8zwSwE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Jun 2025 06:58:12 GMT"
+          "Value": "Thu, 19 Jun 2025 20:34:43 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-1YxHKDEuDwfQNGC8eSBYIOMsK7AY+MGUDS9xW4O4l+8="
-        }
-      ]
-    },
-    {
-      "Route": "paginas/faq.vrc22xmsqk.html",
-      "AssetFile": "paginas/faq.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7215"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"1YxHKDEuDwfQNGC8eSBYIOMsK7AY+MGUDS9xW4O4l+8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 19 Jun 2025 06:58:12 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "vrc22xmsqk"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-1YxHKDEuDwfQNGC8eSBYIOMsK7AY+MGUDS9xW4O4l+8="
-        },
-        {
-          "Name": "label",
-          "Value": "paginas/faq.html"
+          "Value": "sha256-w/Y3l8O51greLxxSPX74htnJ7x2nzcWXpc4ab8zwSwE="
         }
       ]
     },
@@ -99,7 +99,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4824"
+          "Value": "2416"
         },
         {
           "Name": "Content-Type",
@@ -107,22 +107,22 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"dfW4UaqE/JStScY4JM8ilUUVQtz2wizkTimQG01P6OQ=\""
+          "Value": "\"edIOrVbsryBfSIE0aush/ghN9Bx/IXBBHD8BFAYp9IM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Jun 2025 06:58:12 GMT"
+          "Value": "Thu, 19 Jun 2025 20:27:26 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-dfW4UaqE/JStScY4JM8ilUUVQtz2wizkTimQG01P6OQ="
+          "Value": "sha256-edIOrVbsryBfSIE0aush/ghN9Bx/IXBBHD8BFAYp9IM="
         }
       ]
     },
     {
-      "Route": "paginas/login.n9banzxbc1.html",
+      "Route": "paginas/login.trld7z1lj8.html",
       "AssetFile": "paginas/login.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -136,7 +136,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4824"
+          "Value": "2416"
         },
         {
           "Name": "Content-Type",
@@ -144,21 +144,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"dfW4UaqE/JStScY4JM8ilUUVQtz2wizkTimQG01P6OQ=\""
+          "Value": "\"edIOrVbsryBfSIE0aush/ghN9Bx/IXBBHD8BFAYp9IM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Jun 2025 06:58:12 GMT"
+          "Value": "Thu, 19 Jun 2025 20:27:26 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "n9banzxbc1"
+          "Value": "trld7z1lj8"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-dfW4UaqE/JStScY4JM8ilUUVQtz2wizkTimQG01P6OQ="
+          "Value": "sha256-edIOrVbsryBfSIE0aush/ghN9Bx/IXBBHD8BFAYp9IM="
         },
         {
           "Name": "label",

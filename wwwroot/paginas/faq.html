@@ -43,6 +43,36 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
+              document.addEventListener('DOMContentLoaded', () => {
+            const welcomeMessageElem = document.getElementById('welcomeMessage');
+            const loginExitoso = localStorage.getItem('loginExitoso');
+            const nombreUsuarioCompleto = localStorage.getItem('nombreUsuarioCompleto'); // <-- Obtiene el nombre completo
+
+            if (loginExitoso === 'true') {
+                welcomeMessageElem.classList.remove('d-none'); // Muestra el div
+
+                let nombreAMostrar = "Bienvenido"; // Mensaje por defecto
+
+                if (nombreUsuarioCompleto) {
+                    // Dividir la cadena por espacios
+                    const palabras = nombreUsuarioCompleto.split(' ');
+                    
+                    // Tomar las primeras dos palabras
+                    if (palabras.length >= 2) {
+                        nombreAMostrar = `Bienvenido, ${palabras[0]} ${palabras[1]}`;
+                    } else if (palabras.length === 1) {
+                        nombreAMostrar = `Bienvenido, ${palabras[0]}`; // Si solo hay una palabra
+                    }
+                    // Si no hay palabras, se queda con el mensaje por defecto "Bienvenido"
+                }
+                
+                welcomeMessageElem.innerText = nombreAMostrar + '!'; // Añade el signo de exclamación al final
+
+                localStorage.removeItem('loginExitoso');
+                localStorage.removeItem('nombreUsuarioCompleto'); // También elimina el nombre
+            }
+        });
+        
         async function enviarPregunta() {
             console.log("Botón presionado");
             const pregunta = document.getElementById("preguntaInput").value.trim();

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QPP/22eUKOJe6zLO5BJmQPfc1zOLOu+5nuiTR5Hfg5k=",
+  "Hash": "ommH7zbzys4OkuXlIrX7oi1Wtkut9eN3kTBe+in2krA=",
   "Source": "ClasificadorComents",
   "BasePath": "_content/ClasificadorComents",
   "Mode": "Default",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "vrc22xmsqk",
-      "Integrity": "1YxHKDEuDwfQNGC8eSBYIOMsK7AY+MGUDS9xW4O4l+8=",
+      "Fingerprint": "1rncmcszrm",
+      "Integrity": "w/Y3l8O51greLxxSPX74htnJ7x2nzcWXpc4ab8zwSwE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\paginas\\faq.html"
@@ -52,14 +52,59 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "n9banzxbc1",
-      "Integrity": "dfW4UaqE/JStScY4JM8ilUUVQtz2wizkTimQG01P6OQ=",
+      "Fingerprint": "trld7z1lj8",
+      "Integrity": "edIOrVbsryBfSIE0aush/ghN9Bx/IXBBHD8BFAYp9IM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\paginas\\login.html"
     }
   ],
   "Endpoints": [
+    {
+      "Route": "paginas/faq.1rncmcszrm.html",
+      "AssetFile": "C:\\Users\\Personal\\Documents\\PROYECTO ENSAMBLADOR\\visual\\Nueva carpeta\\ClasificadorComents\\ClasificadorComents\\wwwroot\\paginas\\faq.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3592"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"w/Y3l8O51greLxxSPX74htnJ7x2nzcWXpc4ab8zwSwE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 20:34:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1rncmcszrm"
+        },
+        {
+          "Name": "label",
+          "Value": "paginas/faq.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-w/Y3l8O51greLxxSPX74htnJ7x2nzcWXpc4ab8zwSwE="
+        }
+      ]
+    },
     {
       "Route": "paginas/faq.html",
       "AssetFile": "C:\\Users\\Personal\\Documents\\PROYECTO ENSAMBLADOR\\visual\\Nueva carpeta\\ClasificadorComents\\ClasificadorComents\\wwwroot\\paginas\\faq.html",
@@ -71,7 +116,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7215"
+          "Value": "3592"
         },
         {
           "Name": "Content-Type",
@@ -79,11 +124,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1YxHKDEuDwfQNGC8eSBYIOMsK7AY+MGUDS9xW4O4l+8=\""
+          "Value": "\"w/Y3l8O51greLxxSPX74htnJ7x2nzcWXpc4ab8zwSwE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Jun 2025 06:58:12 GMT"
+          "Value": "Thu, 19 Jun 2025 20:34:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -93,52 +138,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-1YxHKDEuDwfQNGC8eSBYIOMsK7AY+MGUDS9xW4O4l+8="
-        }
-      ]
-    },
-    {
-      "Route": "paginas/faq.vrc22xmsqk.html",
-      "AssetFile": "C:\\Users\\Personal\\Documents\\PROYECTO ENSAMBLADOR\\visual\\Nueva carpeta\\ClasificadorComents\\ClasificadorComents\\wwwroot\\paginas\\faq.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7215"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"1YxHKDEuDwfQNGC8eSBYIOMsK7AY+MGUDS9xW4O4l+8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 19 Jun 2025 06:58:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "vrc22xmsqk"
-        },
-        {
-          "Name": "label",
-          "Value": "paginas/faq.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-1YxHKDEuDwfQNGC8eSBYIOMsK7AY+MGUDS9xW4O4l+8="
+          "Value": "sha256-w/Y3l8O51greLxxSPX74htnJ7x2nzcWXpc4ab8zwSwE="
         }
       ]
     },
@@ -153,7 +153,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4824"
+          "Value": "2416"
         },
         {
           "Name": "Content-Type",
@@ -161,11 +161,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"dfW4UaqE/JStScY4JM8ilUUVQtz2wizkTimQG01P6OQ=\""
+          "Value": "\"edIOrVbsryBfSIE0aush/ghN9Bx/IXBBHD8BFAYp9IM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Jun 2025 06:58:12 GMT"
+          "Value": "Thu, 19 Jun 2025 20:27:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -175,12 +175,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-dfW4UaqE/JStScY4JM8ilUUVQtz2wizkTimQG01P6OQ="
+          "Value": "sha256-edIOrVbsryBfSIE0aush/ghN9Bx/IXBBHD8BFAYp9IM="
         }
       ]
     },
     {
-      "Route": "paginas/login.n9banzxbc1.html",
+      "Route": "paginas/login.trld7z1lj8.html",
       "AssetFile": "C:\\Users\\Personal\\Documents\\PROYECTO ENSAMBLADOR\\visual\\Nueva carpeta\\ClasificadorComents\\ClasificadorComents\\wwwroot\\paginas\\login.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -190,7 +190,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4824"
+          "Value": "2416"
         },
         {
           "Name": "Content-Type",
@@ -198,11 +198,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"dfW4UaqE/JStScY4JM8ilUUVQtz2wizkTimQG01P6OQ=\""
+          "Value": "\"edIOrVbsryBfSIE0aush/ghN9Bx/IXBBHD8BFAYp9IM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Jun 2025 06:58:12 GMT"
+          "Value": "Thu, 19 Jun 2025 20:27:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -212,7 +212,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "n9banzxbc1"
+          "Value": "trld7z1lj8"
         },
         {
           "Name": "label",
@@ -220,7 +220,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-dfW4UaqE/JStScY4JM8ilUUVQtz2wizkTimQG01P6OQ="
+          "Value": "sha256-edIOrVbsryBfSIE0aush/ghN9Bx/IXBBHD8BFAYp9IM="
         }
       ]
     }

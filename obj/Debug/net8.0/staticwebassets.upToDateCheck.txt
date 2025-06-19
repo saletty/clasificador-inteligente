@@ -1,0 +1,2 @@
+wwwroot\paginas\faq.html
+wwwroot\paginas\login.html

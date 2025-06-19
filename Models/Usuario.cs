@@ -6,6 +6,7 @@ namespace ClasificadorComents.Models
     {
         [Key]
         public int Registro { get; set; } 
-        public int Contrasena { get; set; } 
+        public int Contrasena { get; set; }
+        public string Nombre { get; set; } 
     }
 }
