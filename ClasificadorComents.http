@@ -1,0 +1,6 @@
+@ClasificadorComents_HostAddress = http://localhost:5255
+
+GET {{ClasificadorComents_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
