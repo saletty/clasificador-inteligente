@@ -2,12 +2,10 @@
 using ClasificadorComents.Data;// el namespace donde está AppDbContext
 
 var builder = WebApplication.CreateBuilder(args);
-var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
-builder.WebHost.ConfigureKestrel(options =>
-{
-    options.ListenAnyIP(int.Parse(port));
-});
-
+//usar el puerto que Render define (normalmente 8080)
+var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+builder.WebHost.UseUrls($"http://*:{port}");
+// Configurar entorno manualmente (opcional)
 builder.Environment.EnvironmentName = "Development";
 
 builder.Services.AddDbContext<AppDbContext>(options =>
