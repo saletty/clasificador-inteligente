@@ -3,27 +3,24 @@ using ClasificadorComents.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Obtiene el puerto asignado por Render
-var port = Environment.GetEnvironmentVariable("PORT");
-
-if (string.IsNullOrEmpty(port))
-{
-    port = "8080"; // puerto por defecto para desarrollo local
-}
-
+// Detecta el puerto dinámico que Render asigna
+var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
 builder.WebHost.UseUrls($"http://*:{port}");
 
-// Configurar la conexión MySQL
+// Conexión a la base de datos MySQL
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
-        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))));
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))
+    )
+);
 
-// CORS: permite acceso desde el frontend desplegado (ajusta la URL)
+// CORS (permite solicitudes del mismo dominio)
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("PermitirFrontend", policy =>
     {
-        policy.WithOrigins("https://clasificador-inteligente.onrender.com") // reemplaza con tu URL frontend en Render
+        policy.AllowAnyOrigin()
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
@@ -35,24 +32,33 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+// Permite archivos estáticos (como HTML, CSS, JS) desde wwwroot/
+app.UseDefaultFiles(); // busca index.html, etc.
 app.UseStaticFiles();
 
+// Redirige raíz "/" a login.html directamente
+app.Use(async (context, next) =>
+{
+    if (context.Request.Path == "/")
+    {
+        context.Response.Redirect("/paginas/login.html");
+        return;
+    }
+    await next();
+});
+
+// Usa CORS (no problema si frontend y backend están juntos)
 app.UseCors("PermitirFrontend");
 
+// Swagger solo en desarrollo
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-    app.UseHttpsRedirection();
-}
-else
-{
-    // En producción evitamos redireccionar a HTTPS si Render ya lo maneja
-    // app.UseHttpsRedirection();
+    app.UseHttpsRedirection(); // opcional en Render
 }
 
 app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();
