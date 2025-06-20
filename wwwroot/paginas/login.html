@@ -29,9 +29,9 @@
     <script>
         async function iniciarSesion() {
              console.log("Botón presionado");
-           const registro = parseInt(document.getElementById("registro").value.trim());
-           const contrasena = parseInt(document.getElementById("contrasena").value.trim());
-           const mensaje = document.getElementById("mensajeError");
+             const registro = document.getElementById("registro").value.trim();
+             const contrasena = document.getElementById("contrasena").value.trim();
+             const mensaje = document.getElementById("mensajeError");
 
            if (isNaN(registro) || isNaN(contrasena)) {
             mensaje.textContent = "Por favor ingresa valores válidos.";
