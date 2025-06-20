@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClasificadorComents")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9046c8ddd4790feaade8c565667cb5f6af520b83")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d3d11293d47ff18247db3e89cbcf09d9391c26e8")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClasificadorComents")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClasificadorComents")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -23,25 +23,30 @@
 </head>
 <body class="d-flex align-items-center justify-content-center vh-100">
 
-    <div class="card shadow p-4" style="width: 100%; max-width: 400px; background-color: rgba(255, 255, 255, 0.85);">
+  <div class="card shadow-lg p-4 rounded-4" style="width: 100%; max-width: 420px; background-color: rgba(255, 255, 255, 0.9);">
+      
+      <div class="text-center mb-2">
+        <img src="Escudo_FICCT.png" alt="FICCT" style="max-width: 120px; height: auto; margin-bottom: 15px;">
+      </div>
 
-        <h4 class="mb-4 text-center">🔐 Iniciar Sesión</h4>
-        <div class="mb-3">
-            <label for="registro" class="form-label">Registro</label>
-            <input type="text" class="form-control" id="registro" placeholder="Ingrese registro">
-        </div>
+      <h4 class="mb-1 text-center fw-bold">Bienvenido a FICCT Responde</h4>
+      <p class="mb-4 text-center text-muted">Accede con tus datos para hacer consultas académicas</p>
 
-        <div class="mb-3">
-            <label for="contrasena" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="contrasena" placeholder="CI">
-        </div>
+      <div class="mb-3">
+          <label for="registro" class="form-label">Registro Universitario</label>
+          <input type="text" class="form-control" id="registro" placeholder="Ingrese su número de registro">
+      </div>
 
-        <button type="button" class="btn btn-primary w-100" onclick="iniciarSesion()">Iniciar sesión</button>
+      <div class="mb-3">
+          <label for="contrasena" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="contrasena" placeholder="Ingrese su CI">
+      </div>
 
+      <button type="button" class="btn btn-primary w-100" onclick="iniciarSesion()">Iniciar sesión</button>
 
+      <p class="mt-3 text-danger text-center" id="mensajeError"></p>
+  </div>
 
-        <p class="mt-3 text-danger text-center" id="mensajeError"></p>
-    </div>
 
     <script>
         async function iniciarSesion() {
