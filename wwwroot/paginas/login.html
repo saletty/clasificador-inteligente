@@ -29,8 +29,8 @@
     <script>
         async function iniciarSesion() {
              console.log("Botón presionado");
-             const registro = document.getElementById("registro").value.trim();
-             const contrasena = document.getElementById("contrasena").value.trim();
+             const registro = parseInt(document.getElementById("registro").value.trim());
+             const contrasena = parseInt(document.getElementById("contrasena").value.trim());
              const mensaje = document.getElementById("mensajeError");
 
            if (isNaN(registro) || isNaN(contrasena)) {
@@ -52,11 +52,6 @@
                 if (response.ok) {
                     const data = await response.json();
                     localStorage.setItem('loginExitoso', 'true');
-                    
-                    //  Guarda el nombre completo si existe en la respuesta
-                    if (data && data.nombreCompleto) { // Nota: Ya no es data.data.nombreCompleto, sino data.nombreCompleto
-                    localStorage.setItem('nombreUsuarioCompleto', data.nombreCompleto);
-                }
                     window.location.href = "faq.html";
                 } else {
                     mensaje.textContent = "Credenciales inválidas.";

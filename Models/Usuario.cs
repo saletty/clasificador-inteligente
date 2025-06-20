@@ -9,6 +9,5 @@ namespace ClasificadorComents.Models
         [Key]
         public string Registro { get; set; } 
         public string Contrasena { get; set; }
-        public string Nombre { get; set; } 
     }
 }
