@@ -3,10 +3,14 @@ using ClasificadorComents.Data;// el namespace donde está AppDbContext
 
 var builder = WebApplication.CreateBuilder(args);
 //usar el puerto que Render define (normalmente 8080)
-var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+var port = Environment.GetEnvironmentVariable("PORT");
+
+if (string.IsNullOrEmpty(port))
+{
+    port = "8080"; // default para desarrollo local
+}
+
 builder.WebHost.UseUrls($"http://*:{port}");
-// Configurar entorno manualmente (opcional)
-builder.Environment.EnvironmentName = "Development";
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
