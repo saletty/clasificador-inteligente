@@ -54,10 +54,9 @@
                     localStorage.setItem('loginExitoso', 'true');
                     
                     //  Guarda el nombre completo si existe en la respuesta
-                    if (data && data.data && data.data.nombreCompleto) {
-                        localStorage.setItem('nombreUsuarioCompleto', data.data.nombreCompleto);
-                    }
-                    
+                    if (data && data.nombreCompleto) { // Nota: Ya no es data.data.nombreCompleto, sino data.nombreCompleto
+                    localStorage.setItem('nombreUsuarioCompleto', data.nombreCompleto);
+                }
                     window.location.href = "faq.html";
                 } else {
                     mensaje.textContent = "Credenciales inválidas.";
