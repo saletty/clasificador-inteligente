@@ -1,71 +1,58 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ClasificadorComents.Data;// el namespace donde está AppDbContext
+using ClasificadorComents.Data;
 
 var builder = WebApplication.CreateBuilder(args);
-//usar el puerto que Render define (normalmente 8080)
+
+// Obtiene el puerto asignado por Render
 var port = Environment.GetEnvironmentVariable("PORT");
 
 if (string.IsNullOrEmpty(port))
 {
-    port = "8080"; // default para desarrollo local
+    port = "8080"; // puerto por defecto para desarrollo local
 }
 
 builder.WebHost.UseUrls($"http://*:{port}");
 
+// Configurar la conexión MySQL
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
         ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))));
 
-// Habilitar CORS
+// CORS: permite acceso desde el frontend desplegado (ajusta la URL)
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("PermitirFrontend", policy =>
     {
-        policy.WithOrigins("https://clasificador-inteligente.onrender.com",
-                           "http://127.0.0.1:5500") 
+        policy.WithOrigins("https://clasificador-inteligente.onrender.com") // reemplaza con tu URL frontend en Render
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
 });
 
-// Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
-app.UseStaticFiles(); // Esta línea es necesaria para servir archivos .html
 
-// Redirigir la raíz "/" a "/paginas/login.html"
-app.Use(async (context, next) =>
-{
-    if (context.Request.Path == "/")
-    {
-        context.Response.Redirect("/paginas/login.html");
-        return;
-    }
-    await next();
-});
-// Usar CORS
+app.UseStaticFiles();
+
 app.UseCors("PermitirFrontend");
 
-// Configurar middleware condicionalmente
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-    app.UseHttpsRedirection(); // Solo en desarrollo
+    app.UseHttpsRedirection();
 }
 else
 {
-    // app.UseHttpsRedirection(); ← evitamos esto para no romperlo en Render
-    // En producción (ej. Docker en Render), no se redirige manualmente a HTTPS
+    // En producción evitamos redireccionar a HTTPS si Render ya lo maneja
+    // app.UseHttpsRedirection();
 }
+
 app.UseAuthorization();
 
-app.MapControllers(); // Para la API backend
+app.MapControllers();
 
 app.Run();
-
