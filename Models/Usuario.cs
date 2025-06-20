@@ -7,8 +7,8 @@ namespace ClasificadorComents.Models
     public class Usuario
     {
         [Key]
-        public int Registro { get; set; } 
-        public int Contrasena { get; set; }
+        public string Registro { get; set; } 
+        public string Contrasena { get; set; }
         public string Nombre { get; set; } 
     }
 }
