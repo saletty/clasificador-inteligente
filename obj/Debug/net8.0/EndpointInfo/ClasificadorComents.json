@@ -129,6 +129,10 @@
           "contrasena": {
             "type": "integer",
             "format": "int32"
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>1rncmcszrm</Fingerprint>
-      <Integrity>w/Y3l8O51greLxxSPX74htnJ7x2nzcWXpc4ab8zwSwE=</Integrity>
+      <Fingerprint>5idkwtqyvk</Fingerprint>
+      <Integrity>o6q9gobMwhfN6j+K5mCJPIKbS5anoiAY0jrOey8BoBE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\paginas\faq.html'))</OriginalItemSpec>
@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>trld7z1lj8</Fingerprint>
-      <Integrity>edIOrVbsryBfSIE0aush/ghN9Bx/IXBBHD8BFAYp9IM=</Integrity>
+      <Fingerprint>5i4tz5yxhn</Fingerprint>
+      <Integrity>86zhv+OGQ0K02jNJtRon8Y5cDDLDbUkpNI3gscyM/n8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\paginas\login.html'))</OriginalItemSpec>

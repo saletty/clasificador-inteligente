@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ommH7zbzys4OkuXlIrX7oi1Wtkut9eN3kTBe+in2krA=",
+  "Hash": "Lg3BqPQqXbZ4K78gyIGI1mZ+8unqzh86iasmVXnlbiA=",
   "Source": "ClasificadorComents",
   "BasePath": "_content/ClasificadorComents",
   "Mode": "Default",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "1rncmcszrm",
-      "Integrity": "w/Y3l8O51greLxxSPX74htnJ7x2nzcWXpc4ab8zwSwE=",
+      "Fingerprint": "5idkwtqyvk",
+      "Integrity": "o6q9gobMwhfN6j+K5mCJPIKbS5anoiAY0jrOey8BoBE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\paginas\\faq.html"
@@ -52,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "trld7z1lj8",
-      "Integrity": "edIOrVbsryBfSIE0aush/ghN9Bx/IXBBHD8BFAYp9IM=",
+      "Fingerprint": "5i4tz5yxhn",
+      "Integrity": "86zhv+OGQ0K02jNJtRon8Y5cDDLDbUkpNI3gscyM/n8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\paginas\\login.html"
@@ -61,7 +61,7 @@
   ],
   "Endpoints": [
     {
-      "Route": "paginas/faq.1rncmcszrm.html",
+      "Route": "paginas/faq.5idkwtqyvk.html",
       "AssetFile": "C:\\Users\\Personal\\Documents\\PROYECTO ENSAMBLADOR\\visual\\Nueva carpeta\\ClasificadorComents\\ClasificadorComents\\wwwroot\\paginas\\faq.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -71,7 +71,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3592"
+          "Value": "5122"
         },
         {
           "Name": "Content-Type",
@@ -79,11 +79,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"w/Y3l8O51greLxxSPX74htnJ7x2nzcWXpc4ab8zwSwE=\""
+          "Value": "\"o6q9gobMwhfN6j+K5mCJPIKbS5anoiAY0jrOey8BoBE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Jun 2025 20:34:43 GMT"
+          "Value": "Thu, 19 Jun 2025 23:53:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -93,7 +93,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1rncmcszrm"
+          "Value": "5idkwtqyvk"
         },
         {
           "Name": "label",
@@ -101,7 +101,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-w/Y3l8O51greLxxSPX74htnJ7x2nzcWXpc4ab8zwSwE="
+          "Value": "sha256-o6q9gobMwhfN6j+K5mCJPIKbS5anoiAY0jrOey8BoBE="
         }
       ]
     },
@@ -116,7 +116,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3592"
+          "Value": "5122"
         },
         {
           "Name": "Content-Type",
@@ -124,11 +124,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"w/Y3l8O51greLxxSPX74htnJ7x2nzcWXpc4ab8zwSwE=\""
+          "Value": "\"o6q9gobMwhfN6j+K5mCJPIKbS5anoiAY0jrOey8BoBE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Jun 2025 20:34:43 GMT"
+          "Value": "Thu, 19 Jun 2025 23:53:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -138,7 +138,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-w/Y3l8O51greLxxSPX74htnJ7x2nzcWXpc4ab8zwSwE="
+          "Value": "sha256-o6q9gobMwhfN6j+K5mCJPIKbS5anoiAY0jrOey8BoBE="
+        }
+      ]
+    },
+    {
+      "Route": "paginas/login.5i4tz5yxhn.html",
+      "AssetFile": "C:\\Users\\Personal\\Documents\\PROYECTO ENSAMBLADOR\\visual\\Nueva carpeta\\ClasificadorComents\\ClasificadorComents\\wwwroot\\paginas\\login.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2765"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"86zhv+OGQ0K02jNJtRon8Y5cDDLDbUkpNI3gscyM/n8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Jun 2025 00:07:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5i4tz5yxhn"
+        },
+        {
+          "Name": "label",
+          "Value": "paginas/login.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-86zhv+OGQ0K02jNJtRon8Y5cDDLDbUkpNI3gscyM/n8="
         }
       ]
     },
@@ -153,7 +198,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2416"
+          "Value": "2765"
         },
         {
           "Name": "Content-Type",
@@ -161,11 +206,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"edIOrVbsryBfSIE0aush/ghN9Bx/IXBBHD8BFAYp9IM=\""
+          "Value": "\"86zhv+OGQ0K02jNJtRon8Y5cDDLDbUkpNI3gscyM/n8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Jun 2025 20:27:26 GMT"
+          "Value": "Fri, 20 Jun 2025 00:07:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -175,52 +220,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-edIOrVbsryBfSIE0aush/ghN9Bx/IXBBHD8BFAYp9IM="
-        }
-      ]
-    },
-    {
-      "Route": "paginas/login.trld7z1lj8.html",
-      "AssetFile": "C:\\Users\\Personal\\Documents\\PROYECTO ENSAMBLADOR\\visual\\Nueva carpeta\\ClasificadorComents\\ClasificadorComents\\wwwroot\\paginas\\login.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2416"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"edIOrVbsryBfSIE0aush/ghN9Bx/IXBBHD8BFAYp9IM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 19 Jun 2025 20:27:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "trld7z1lj8"
-        },
-        {
-          "Name": "label",
-          "Value": "paginas/login.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-edIOrVbsryBfSIE0aush/ghN9Bx/IXBBHD8BFAYp9IM="
+          "Value": "sha256-86zhv+OGQ0K02jNJtRon8Y5cDDLDbUkpNI3gscyM/n8="
         }
       ]
     }
