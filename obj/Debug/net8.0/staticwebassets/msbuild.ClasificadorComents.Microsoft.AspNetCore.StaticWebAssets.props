@@ -1,5 +1,23 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\paginas\Escudo_FICCT.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ClasificadorComents</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ClasificadorComents</BasePath>
+      <RelativePath>paginas/Escudo_FICCT.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>kmyt0g639q</Fingerprint>
+      <Integrity>dEtKeqxuvLXOMi8TGP2a7itE1+pzrgrfZVaDMtIZhPM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\paginas\Escudo_FICCT.png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\paginas\faq.html'))">
       <SourceType>Package</SourceType>
       <SourceId>ClasificadorComents</SourceId>
@@ -12,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>5idkwtqyvk</Fingerprint>
-      <Integrity>o6q9gobMwhfN6j+K5mCJPIKbS5anoiAY0jrOey8BoBE=</Integrity>
+      <Fingerprint>hxuctjr4t2</Fingerprint>
+      <Integrity>a79AnJe3qQayDgVnkdlh7Fs4crWCs3qolPvbIcQYjiM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\paginas\faq.html'))</OriginalItemSpec>
@@ -30,8 +48,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>5i4tz5yxhn</Fingerprint>
-      <Integrity>86zhv+OGQ0K02jNJtRon8Y5cDDLDbUkpNI3gscyM/n8=</Integrity>
+      <Fingerprint>7plcidae4r</Fingerprint>
+      <Integrity>JUGhBZXRfsqQlWm2Hpmw/H+Jwb0BmArI7GqmUq7G+ys=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\paginas\login.html'))</OriginalItemSpec>

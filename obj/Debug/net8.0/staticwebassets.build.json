@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Lg3BqPQqXbZ4K78gyIGI1mZ+8unqzh86iasmVXnlbiA=",
+  "Hash": "vKaVxl/60+CjHpAESnichiXQEOtVsSMDd2VunHP51UA=",
   "Source": "ClasificadorComents",
   "BasePath": "_content/ClasificadorComents",
   "Mode": "Default",
@@ -17,6 +17,27 @@
   ],
   "Assets": [
     {
+      "Identity": "C:\\Users\\Personal\\Documents\\PROYECTO ENSAMBLADOR\\visual\\Nueva carpeta\\ClasificadorComents\\ClasificadorComents\\wwwroot\\paginas\\Escudo_FICCT.png",
+      "SourceId": "ClasificadorComents",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Personal\\Documents\\PROYECTO ENSAMBLADOR\\visual\\Nueva carpeta\\ClasificadorComents\\ClasificadorComents\\wwwroot\\",
+      "BasePath": "_content/ClasificadorComents",
+      "RelativePath": "paginas/Escudo_FICCT#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kmyt0g639q",
+      "Integrity": "dEtKeqxuvLXOMi8TGP2a7itE1+pzrgrfZVaDMtIZhPM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\paginas\\Escudo_FICCT.png"
+    },
+    {
       "Identity": "C:\\Users\\Personal\\Documents\\PROYECTO ENSAMBLADOR\\visual\\Nueva carpeta\\ClasificadorComents\\ClasificadorComents\\wwwroot\\paginas\\faq.html",
       "SourceId": "ClasificadorComents",
       "SourceType": "Discovered",
@@ -31,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "5idkwtqyvk",
-      "Integrity": "o6q9gobMwhfN6j+K5mCJPIKbS5anoiAY0jrOey8BoBE=",
+      "Fingerprint": "hxuctjr4t2",
+      "Integrity": "a79AnJe3qQayDgVnkdlh7Fs4crWCs3qolPvbIcQYjiM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\paginas\\faq.html"
@@ -52,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "5i4tz5yxhn",
-      "Integrity": "86zhv+OGQ0K02jNJtRon8Y5cDDLDbUkpNI3gscyM/n8=",
+      "Fingerprint": "7plcidae4r",
+      "Integrity": "JUGhBZXRfsqQlWm2Hpmw/H+Jwb0BmArI7GqmUq7G+ys=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\paginas\\login.html"
@@ -61,8 +82,8 @@
   ],
   "Endpoints": [
     {
-      "Route": "paginas/faq.5idkwtqyvk.html",
-      "AssetFile": "C:\\Users\\Personal\\Documents\\PROYECTO ENSAMBLADOR\\visual\\Nueva carpeta\\ClasificadorComents\\ClasificadorComents\\wwwroot\\paginas\\faq.html",
+      "Route": "paginas/Escudo_FICCT.kmyt0g639q.png",
+      "AssetFile": "C:\\Users\\Personal\\Documents\\PROYECTO ENSAMBLADOR\\visual\\Nueva carpeta\\ClasificadorComents\\ClasificadorComents\\wwwroot\\paginas\\Escudo_FICCT.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -71,19 +92,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5122"
+          "Value": "498766"
         },
         {
           "Name": "Content-Type",
-          "Value": "text/html"
+          "Value": "image/png"
         },
         {
           "Name": "ETag",
-          "Value": "\"o6q9gobMwhfN6j+K5mCJPIKbS5anoiAY0jrOey8BoBE=\""
+          "Value": "\"dEtKeqxuvLXOMi8TGP2a7itE1+pzrgrfZVaDMtIZhPM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Jun 2025 23:53:26 GMT"
+          "Value": "Fri, 20 Jun 2025 04:20:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -93,15 +114,52 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5idkwtqyvk"
+          "Value": "kmyt0g639q"
         },
         {
           "Name": "label",
-          "Value": "paginas/faq.html"
+          "Value": "paginas/Escudo_FICCT.png"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-o6q9gobMwhfN6j+K5mCJPIKbS5anoiAY0jrOey8BoBE="
+          "Value": "sha256-dEtKeqxuvLXOMi8TGP2a7itE1+pzrgrfZVaDMtIZhPM="
+        }
+      ]
+    },
+    {
+      "Route": "paginas/Escudo_FICCT.png",
+      "AssetFile": "C:\\Users\\Personal\\Documents\\PROYECTO ENSAMBLADOR\\visual\\Nueva carpeta\\ClasificadorComents\\ClasificadorComents\\wwwroot\\paginas\\Escudo_FICCT.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "498766"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dEtKeqxuvLXOMi8TGP2a7itE1+pzrgrfZVaDMtIZhPM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Jun 2025 04:20:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dEtKeqxuvLXOMi8TGP2a7itE1+pzrgrfZVaDMtIZhPM="
         }
       ]
     },
@@ -116,7 +174,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5122"
+          "Value": "4723"
         },
         {
           "Name": "Content-Type",
@@ -124,11 +182,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"o6q9gobMwhfN6j+K5mCJPIKbS5anoiAY0jrOey8BoBE=\""
+          "Value": "\"a79AnJe3qQayDgVnkdlh7Fs4crWCs3qolPvbIcQYjiM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Jun 2025 23:53:26 GMT"
+          "Value": "Fri, 20 Jun 2025 02:46:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -138,13 +196,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-o6q9gobMwhfN6j+K5mCJPIKbS5anoiAY0jrOey8BoBE="
+          "Value": "sha256-a79AnJe3qQayDgVnkdlh7Fs4crWCs3qolPvbIcQYjiM="
         }
       ]
     },
     {
-      "Route": "paginas/login.5i4tz5yxhn.html",
-      "AssetFile": "C:\\Users\\Personal\\Documents\\PROYECTO ENSAMBLADOR\\visual\\Nueva carpeta\\ClasificadorComents\\ClasificadorComents\\wwwroot\\paginas\\login.html",
+      "Route": "paginas/faq.hxuctjr4t2.html",
+      "AssetFile": "C:\\Users\\Personal\\Documents\\PROYECTO ENSAMBLADOR\\visual\\Nueva carpeta\\ClasificadorComents\\ClasificadorComents\\wwwroot\\paginas\\faq.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -153,7 +211,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2765"
+          "Value": "4723"
         },
         {
           "Name": "Content-Type",
@@ -161,11 +219,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"86zhv+OGQ0K02jNJtRon8Y5cDDLDbUkpNI3gscyM/n8=\""
+          "Value": "\"a79AnJe3qQayDgVnkdlh7Fs4crWCs3qolPvbIcQYjiM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 20 Jun 2025 00:07:24 GMT"
+          "Value": "Fri, 20 Jun 2025 02:46:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -175,7 +233,52 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5i4tz5yxhn"
+          "Value": "hxuctjr4t2"
+        },
+        {
+          "Name": "label",
+          "Value": "paginas/faq.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-a79AnJe3qQayDgVnkdlh7Fs4crWCs3qolPvbIcQYjiM="
+        }
+      ]
+    },
+    {
+      "Route": "paginas/login.7plcidae4r.html",
+      "AssetFile": "C:\\Users\\Personal\\Documents\\PROYECTO ENSAMBLADOR\\visual\\Nueva carpeta\\ClasificadorComents\\ClasificadorComents\\wwwroot\\paginas\\login.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3245"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JUGhBZXRfsqQlWm2Hpmw/H+Jwb0BmArI7GqmUq7G+ys=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Jun 2025 04:26:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7plcidae4r"
         },
         {
           "Name": "label",
@@ -183,7 +286,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-86zhv+OGQ0K02jNJtRon8Y5cDDLDbUkpNI3gscyM/n8="
+          "Value": "sha256-JUGhBZXRfsqQlWm2Hpmw/H+Jwb0BmArI7GqmUq7G+ys="
         }
       ]
     },
@@ -198,7 +301,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2765"
+          "Value": "3245"
         },
         {
           "Name": "Content-Type",
@@ -206,11 +309,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"86zhv+OGQ0K02jNJtRon8Y5cDDLDbUkpNI3gscyM/n8=\""
+          "Value": "\"JUGhBZXRfsqQlWm2Hpmw/H+Jwb0BmArI7GqmUq7G+ys=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 20 Jun 2025 00:07:24 GMT"
+          "Value": "Fri, 20 Jun 2025 04:26:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -220,7 +323,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-86zhv+OGQ0K02jNJtRon8Y5cDDLDbUkpNI3gscyM/n8="
+          "Value": "sha256-JUGhBZXRfsqQlWm2Hpmw/H+Jwb0BmArI7GqmUq7G+ys="
         }
       ]
     }

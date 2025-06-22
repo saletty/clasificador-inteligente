@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Personal\\Documents\\PROYECTO ENSAMBLADOR\\visual\\Nueva carpeta\\ClasificadorComents\\ClasificadorComents\\wwwroot\\paginas\\Escudo_FICCT.png",
+      "PackagePath": "staticwebassets\\paginas\\Escudo_FICCT.png"
+    },
+    {
       "Id": "C:\\Users\\Personal\\Documents\\PROYECTO ENSAMBLADOR\\visual\\Nueva carpeta\\ClasificadorComents\\ClasificadorComents\\wwwroot\\paginas\\faq.html",
       "PackagePath": "staticwebassets\\paginas\\faq.html"
     },

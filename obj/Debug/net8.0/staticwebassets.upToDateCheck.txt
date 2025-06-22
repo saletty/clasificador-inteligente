@@ -1,2 +1,3 @@
+wwwroot\paginas\Escudo_FICCT.png
 wwwroot\paginas\faq.html
 wwwroot\paginas\login.html

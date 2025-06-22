@@ -36,6 +36,18 @@
         }
       }
     },
+    "/api/faq/generar-embeddings": {
+      "post": {
+        "tags": [
+          "Faq"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/usuario/login": {
       "post": {
         "tags": [
@@ -129,10 +141,6 @@
           "contrasena": {
             "type": "integer",
             "format": "int32"
-          },
-          "nombre": {
-            "type": "string",
-            "nullable": true
           }
         },
         "additionalProperties": false

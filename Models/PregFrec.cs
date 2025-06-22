@@ -11,5 +11,6 @@ namespace ClasificadorComents.Models
         public string Pregunta_Ejemplo { get; set; }
         public string Categoria { get; set; }
         public string Respuesta { get; set; }
+        public string? Embedding { get; set; } //para guardar el vector embedding en formato JSON
     }
 }

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Información para nuevos estudiantes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f4f4f4;
+      padding-top: 70px; /* espacio para la navbar fija */
+    }
+
+    /* NAVBAR FIJA Y MODERNA */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #002147;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 24px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      z-index: 1030;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .navbar .logo svg {
+      width: 28px;
+      height: 28px;
+    }
+
+    .navbar .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: #00c3ff;
+    }
+
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 10px;
+      }
+    }
+
+    /* BARRA LATERAL FIJA A LA IZQUIERDA */
+.sidebar-ficct {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  width: 260px;
+  height: calc(100vh - 40px);
+  background-color: #002147;
+  padding: 20px;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: center; /* Centrado vertical */
+  align-items: center;     /* Centrado horizontal si lo necesitas */
+}
+
+.contenido-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
+
+/* Opcional: para dar margen entre botones y el título */
+.botones-arriba {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Que el botón "Volver" ocupe todo el ancho y esté al fondo */
+.volver-inicio .btn-volver {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+    /* Título de la barra lateral */
+    .sidebar-ficct h5 {
+      color: #ffffff;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    /* Botones de selección */
+    .sidebar-ficct .btn-info-select {
+      width: 100%;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      border: 2px solid transparent;
+      background-color: #0d6efd;
+      color: white;
+      transition: all 0.3s ease;
+      text-align: left;
+    }
+
+    .sidebar-ficct .btn-info-select:hover {
+      background-color: white;
+      color: #0d6efd;
+      border-color: #0d6efd;
+    }
+
+    .icono {
+      margin-right: 8px;
+    }
+
+    /* Contenedor del contenido desplazado */
+    .contenido-ficct {
+      margin-left: 270px; /* deja espacio para la barra lateral */
+      padding: 20px;
+    }
+
+    /* Secciones ocultas por defecto */
+    .info-section {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height 0.6s ease, opacity 0.6s ease;
+    }
+
+    .info-section.mostrar {
+      opacity: 1;
+    }
+
+    /* RESPONSIVE: en móviles, la barra se transforma en horizontal */
+    @media (max-width: 768px) {
+      .sidebar-ficct {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .contenido-ficct {
+        margin-left: 0;
+      }
+
+      .sidebar-ficct .btn-info-select {
+        width: auto;
+        min-width: 160px;
+        text-align: center;
+      }
+    }
+    /* Botón activo (resaltado) */
+.btn-info-select.activo {
+  background-color: #ffffff;
+  color: #0d6efd;
+  border-color: #0d6efd;
+  box-shadow: 0 0 8px rgba(13, 110, 253, 0.5);
+}
+
+/* Animación más fluida en la sección */
+.info-section {
+  transition: max-height 0.6s ease, opacity 0.6s ease, transform 0.3s ease;
+  transform: translateY(-10px);
+}
+
+.info-section.mostrar {
+  transform: translateY(0);
+}
+
+.navbar .btn-outline-light {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.navbar .btn-outline-light:hover {
+  background-color: white;
+  color: #002147;
+}
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR superior -->
+  <nav class="navbar">
+    <div class="logo">
+      <!-- Ícono SVG de casa -->
+      <svg fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+        <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0h6"/>
+      </svg>
+      <span>FICCT RESPONDE</span>
+    </div>
+
+    <div class="nav-links">
+    <a
+      href="login.html"
+      class="btn btn-outline-light btn-sm"
+      onclick="sessionStorage.removeItem('seccionAbiertaFICCT')"
+    >
+      <i class="bi bi-box-arrow-left"></i> Volver a inicio de sesión
+    </a>
+  </div>
+  </nav>
+<!-- BARRA LATERAL FIJA -->
+<div class="sidebar-ficct">
+  <div class="contenido-sidebar">
+    <h5>¿Quieres ser parte de la FICCT?</h5>
+
+    <div class="botones-arriba">
+      <button class="btn btn-info-select" onclick="mostrarInfo('cup')">
+        <i class="bi bi-pencil-square icono"></i> ¿Dar el CUP?
+      </button>
+      <button class="btn btn-info-select" onclick="mostrarInfo('psa')">
+        <i class="bi bi-journal-text icono"></i> ¿Dar el PSA?
+      </button>
+      <button class="btn btn-info-select" onclick="mostrarInfo('registro')">
+        <i class="bi bi-person-check icono"></i> ¿Consolidar registro?
+      </button>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+  <!-- CONTENIDO PRINCIPAL desplazado a la derecha -->
+  <div class="contenido-ficct">
+
+    <div id="cup" class="info-section text-start">
+      <h5>Pasos para la inscripción al CUP</h5>
+      <ol class="list-group list-group-numbered">
+        <li class="list-group-item">
+          <strong>Revisar la convocatoria oficial</strong><br />
+          👉 <a href="https://admisionweb.uagrm.edu.bo" target="_blank">admisionweb.uagrm.edu.bo</a><br />
+          Busca la convocatoria actual o próxima del CUP.<br />
+          Lee con atención los requisitos, fechas y procedimientos.
+        </li>
+        <li class="list-group-item">
+          <strong>Registrarse en el portal de admisión</strong><br />
+          Completa el formulario con tus datos personales y crea una contraseña.
+        </li>
+        <li class="list-group-item">
+          <strong>Seleccionar la facultad y carrera</strong><br />
+          Escoge la FICCT y la carrera deseada.
+        </li>
+        <li class="list-group-item">
+          <strong>Realizar el pago de matrícula</strong><br />
+          En la Caja Facultativa de la FICCT, con tu formulario y CI.
+        </li>
+        <li class="list-group-item">
+          <strong>Entregar carpeta de documentos</strong><br />
+          Folder amarillo con formularios, libreta, título, CI, etc.
+        </li>
+        <li class="list-group-item">
+          <strong>Asistir a clases del CUP</strong><br />
+          Duran aproximadamente 2 meses.
+        </li>
+        <li class="list-group-item">
+          <strong>Presentar los dos exámenes del CUP</strong><br />
+          Al final de cada etapa del curso.
+        </li>
+        <li class="list-group-item">
+          <strong>Esperar resultados</strong><br />
+          Se publican en la facultad o web oficial.
+        </li>
+      </ol>
+    </div>
+
+    <div id="psa" class="info-section text-start">
+      <h5><i class="bi bi-journal-text"></i> Inscripción al PSA</h5>
+      <ol>
+        <li>Visita: <a href="https://psa.uagrm.edu.bo" target="_blank">psa.uagrm.edu.bo</a></li>
+        <li>Selecciona la carrera de la FICCT que te interesa.</li>
+        <li>Revisa requisitos, fechas y sedes de examen.</li>
+      </ol>
+    </div>
+
+    <div id="registro" class="info-section text-start">
+      <h5><i class="bi bi-person-check"></i> Consolidar tu registro</h5>
+      <ul>
+        <li>Consulta los pasos en: <a href="https://ficct.uagrm.edu.bo" target="_blank">ficct.uagrm.edu.bo</a></li>
+        <li>Acude a Registros e Inscripciones de la FICCT.</li>
+        <li>También puedes escribir a: <a href="mailto:informaciones@ficct.edu.bo">informaciones@ficct.edu.bo</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SCRIPT para mostrar las secciones -->
+  <script>
+  function mostrarInfo(id) {
+    const secciones = document.querySelectorAll('.info-section');
+    const seleccionada = document.getElementById(id);
+    const botones = document.querySelectorAll('.btn-info-select');
+
+    const yaAbierta = seleccionada.classList.contains('mostrar');
+
+    // Ocultar todas las secciones
+    secciones.forEach(sec => {
+      sec.style.maxHeight = null;
+      sec.classList.remove('mostrar');
+    });
+
+    // Quitar estilo activo de todos los botones
+    botones.forEach(btn => btn.classList.remove('activo'));
+
+    if (!yaAbierta) {
+      seleccionada.classList.add('mostrar');
+      seleccionada.style.maxHeight = seleccionada.scrollHeight + 'px';
+
+      // Agrega clase activa al botón correspondiente
+      const btnActivo = document.querySelector(`[onclick="mostrarInfo('${id}')"]`);
+      if (btnActivo) btnActivo.classList.add('activo');
+
+      seleccionada.scrollIntoView({ behavior: 'smooth' });
+      sessionStorage.setItem('seccionAbiertaFICCT', id);
+    } else {
+      sessionStorage.removeItem('seccionAbiertaFICCT');
+    }
+  }
+
+  // Restaurar última sección visible al cargar la página
+  window.addEventListener('DOMContentLoaded', () => {
+    const idGuardado = sessionStorage.getItem('seccionAbiertaFICCT');
+    if (idGuardado) {
+      const seccion = document.getElementById(idGuardado);
+      const btn = document.querySelector(`[onclick="mostrarInfo('${idGuardado}')"]`);
+      if (seccion) {
+        seccion.classList.add('mostrar');
+        seccion.style.maxHeight = seccion.scrollHeight + 'px';
+        if (btn) btn.classList.add('activo');
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
+

@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ClasificadorComents.Data;
+using ClasificadorComents.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,10 +26,11 @@ builder.Services.AddCors(options =>
               .AllowAnyMethod();
     });
 });
-
+builder.Services.AddHttpClient();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddHttpClient<OpenAIService>();
 
 var app = builder.Build();
 

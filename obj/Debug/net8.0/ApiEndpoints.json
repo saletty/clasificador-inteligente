@@ -1,6 +1,16 @@
 [
   {
     "ContainingType": "ClasificadorComents.Controllers.FaqController",
+    "Method": "GenerarEmbeddings",
+    "RelativePath": "api/faq/generar-embeddings",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClasificadorComents.Controllers.FaqController",
     "Method": "ResponderPregunta",
     "RelativePath": "api/faq/responder",
     "HttpMethod": "POST",
