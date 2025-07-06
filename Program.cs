@@ -28,9 +28,12 @@ builder.Services.AddCors(options =>
 });
 builder.Services.AddHttpClient();
 builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddHttpClient<OpenAIService>();
+// ✅ Solo esto para OpenAIService
+builder.Services.AddSingleton<OpenAIService>();
+
+
+
 
 var app = builder.Build();
 

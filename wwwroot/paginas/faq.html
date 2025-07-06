@@ -149,86 +149,86 @@ body {
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-        <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const welcomeMessageElem = document.getElementById('welcomeMessage');
-        const loginExitoso = localStorage.getItem('loginExitoso');
+       <script>
+document.addEventListener('DOMContentLoaded', () => {
+    const welcomeMessageElem = document.getElementById('welcomeMessage');
+    const loginExitoso = localStorage.getItem('loginExitoso');
 
-        if (loginExitoso === 'true') {
-            welcomeMessageElem.classList.remove('d-none');
-            welcomeMessageElem.innerText = '¡Bienvenido!';
-            localStorage.removeItem('loginExitoso');
+    if (loginExitoso === 'true') {
+        welcomeMessageElem.classList.remove('d-none');
+        welcomeMessageElem.innerText = '¡Bienvenido!';
+        localStorage.removeItem('loginExitoso');
+    }
+
+    // Detectar Enter en el input
+    document.getElementById('preguntaInput').addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            enviarPregunta();
         }
-
-        // Detectar Enter en el input
-        document.getElementById('preguntaInput').addEventListener('keydown', function(event) {
-            if (event.key === 'Enter') {
-                event.preventDefault();
-                enviarPregunta();
-            }
-        });
-
-        // Evento para cerrar sesión
-        document.getElementById('btnCerrarSesion').addEventListener('click', () => {
-            localStorage.clear();
-            window.location.href = 'login.html'; // Cambia si tu login está en otra ruta
-        });
     });
 
+    // Evento para cerrar sesión
+    document.getElementById('btnCerrarSesion').addEventListener('click', () => {
+        localStorage.clear();
+        window.location.href = 'login.html';
+    });
+});
 
-        // Tu función existente para enviar preguntas
-        async function enviarPregunta() {
-            console.log("Botón presionado");
-            const pregunta = document.getElementById("preguntaInput").value.trim();
-            const respuestaElem = document.getElementById("respuestaFaq");
-            const btnEnviar = document.getElementById("btnEnviar");
+async function enviarPregunta() {
+    console.log("Botón presionado");
+    const pregunta = document.getElementById("preguntaInput").value.trim();
+    const respuestaElem = document.getElementById("respuestaFaq");
+    const btnEnviar = document.getElementById("btnEnviar");
 
-            respuestaElem.className = ''; // reset clases
-            respuestaElem.innerHTML = '';
+    respuestaElem.className = '';
+    respuestaElem.innerHTML = '';
 
-            if (!pregunta) {
-                respuestaElem.className = 'alert alert-warning';
-                respuestaElem.innerText = "Por favor, escribe una pregunta.";
-                return;
-            }
+    if (!pregunta) {
+        respuestaElem.className = 'alert alert-warning';
+        respuestaElem.innerText = "Por favor, escribe una pregunta.";
+        return;
+    }
 
-            try {
-                btnEnviar.disabled = true;
-                btnEnviar.innerText = "Enviando...";
-                const BASE_URL = "https://clasificador-inteligente.onrender.com";
+    try {
+        btnEnviar.disabled = true;
+        btnEnviar.innerText = "Enviando...";
+        //const BASE_URL = "https://clasificador-inteligente.onrender.com";
+        // ✅ Usa HTTP local (backend)
+        const BASE_URL = "http://localhost:8080";
 
-                const response = await fetch(`${BASE_URL}/api/faq/responder`, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({ Pregunta:pregunta })
-                });
+        const response = await fetch(`${BASE_URL}/api/faq/responder`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(pregunta)  // Enviamos el string directo
+        });
 
-                if (!response.ok) {
-                    throw new Error(`Error en la solicitud: ${response.status}`);
-                }
-
-                const data = await response.json();
-                respuestaElem.className = 'alert alert-success';
-
-                // Puedes personalizar lo que muestras, por ejemplo:
-                 if (data.respuesta) {
-                 respuestaElem.innerHTML = `<strong>Respuesta:</strong> ${data.respuesta}<br><small class="text-muted">Coincidencia: "${data.preguntaCoincidente}" (Similitud: ${data.similitud.toFixed(2)})</small>`;
-                 } else {
-                    respuestaElem.innerHTML = `<strong>${data.mensaje || 'No se encontró una respuesta adecuada.'}</strong><br><small class="text-muted">Coincidencia: "${data.preguntaCoincidente || 'Ninguna'}" (Similitud: ${data.similitud?.toFixed(2) || 0})</small>`;
-                    }
-
-            } catch (error) {
-                respuestaElem.className = 'alert alert-danger';
-                respuestaElem.innerText = "Ocurrió un error al enviar la pregunta.";
-                console.error(error);
-            } finally {
-                btnEnviar.disabled = false;
-                btnEnviar.innerText = "Enviar";
-            }
+        if (!response.ok) {
+            throw new Error(`Error en la solicitud: ${response.status}`);
         }
-    </script>
+
+        const data = await response.json();
+        respuestaElem.className = 'alert alert-success';
+
+        if (data.Respuesta) {
+            respuestaElem.innerHTML = `<strong>Respuesta:</strong> ${data.Respuesta}`;
+        } else {
+            respuestaElem.innerHTML = `<strong>No se pudo generar una respuesta adecuada.</strong>`;
+        }
+
+    } catch (error) {
+        respuestaElem.className = 'alert alert-danger';
+        respuestaElem.innerText = "Ocurrió un error al enviar la pregunta.";
+        console.error(error);
+    } finally {
+        btnEnviar.disabled = false;
+        btnEnviar.innerText = "Enviar";
+    }
+}
+</script>
+
 
 </body>
 </html>
