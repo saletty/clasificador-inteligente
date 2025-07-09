@@ -19,12 +19,7 @@ namespace ClasificadorComents.Controllers
         [HttpPost("login")]
         public IActionResult Login([FromBody] Usuario login)
         {
-            //return Ok("Sí llegó al backend");
-
-            // Para debug: devolver lo que recibe
-
-            //return Ok(new { recibidoRegistro = login.Registro, recibidoContrasena = login.Contrasena });
-
+          
             var usuario = _context.Usuario
 
             .FirstOrDefault(u => u.Registro == login.Registro && u.Contrasena == login.Contrasena);

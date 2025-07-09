@@ -23,7 +23,7 @@ namespace ClasificadorComents.Data
 
             new FaqProcess
             {
-                Title = "Pasos para inscripción de verano",
+                Title = "Pasos para inscribir verano",
                 Intro = "Este proceso exprés de inscribirte en cursos de verano consta de 3 pasos:",
                 Steps = new List<ProcessStep>
                 {
