@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ClasificadorComents.Data;
-using ClasificadorComents.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,9 +28,7 @@ builder.Services.AddCors(options =>
 builder.Services.AddHttpClient();
 builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
-// Registrar tus servicios
-builder.Services.AddSingleton<FaqProcessService>();
-builder.Services.AddSingleton<OpenAIService>();  // opcional si aún lo usas
+
 
 var app = builder.Build();
 
