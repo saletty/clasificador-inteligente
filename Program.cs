@@ -29,19 +29,20 @@ builder.Services.AddCors(options =>
 builder.Services.AddHttpClient();
 builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
-// ✅ Solo esto para OpenAIService
-builder.Services.AddSingleton<OpenAIService>();
-
-
-
+// Registrar tus servicios
+builder.Services.AddSingleton<FaqProcessService>();
+builder.Services.AddSingleton<OpenAIService>();  // opcional si aún lo usas
 
 var app = builder.Build();
 
-// Permite archivos estáticos (como HTML, CSS, JS) desde wwwroot/
-app.UseDefaultFiles(); // busca index.html, etc.
+// ✅ CORS siempre debe estar antes de todo lo que pueda manejar rutas
+app.UseCors("PermitirFrontend");
+
+// ✅ Archivos estáticos
+app.UseDefaultFiles();
 app.UseStaticFiles();
 
-// Redirige raíz "/" a login.html directamente
+// ✅ Redirección raíz (si es necesaria)
 app.Use(async (context, next) =>
 {
     if (context.Request.Path == "/")
@@ -52,18 +53,19 @@ app.Use(async (context, next) =>
     await next();
 });
 
-// Usa CORS (no problema si frontend y backend están juntos)
-app.UseCors("PermitirFrontend");
-
-// Swagger solo en desarrollo
+// ✅ Swagger en desarrollo
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-    app.UseHttpsRedirection(); // opcional en Render
+    // Puedes dejar esto si Render lo necesita, pero puede omitirse localmente:
+    // app.UseHttpsRedirection(); 
 }
 
 app.UseAuthorization();
 app.MapControllers();
-
 app.Run();
+
+
+
+

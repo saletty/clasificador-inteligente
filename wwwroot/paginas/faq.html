@@ -175,60 +175,81 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-async function enviarPregunta() {
-    console.log("Botón presionado");
-    const pregunta = document.getElementById("preguntaInput").value.trim();
-    const respuestaElem = document.getElementById("respuestaFaq");
-    const btnEnviar = document.getElementById("btnEnviar");
+// Genera el HTML de la respuesta paso-a-paso
+    function renderFaqResponse(data) {
+      let html = '';
 
-    respuestaElem.className = '';
-    respuestaElem.innerHTML = '';
+      // Título e intro
+      if (data.title) {
+        html += `<h3 class="text-primary mb-3">${data.title}</h3>`;
+      }
+      html += `<p class="text-muted mb-3">${data.intro}</p>`;
 
-    if (!pregunta) {
-        respuestaElem.className = 'alert alert-warning';
-        respuestaElem.innerText = "Por favor, escribe una pregunta.";
-        return;
+      // Lista de pasos (si existen)
+      if (Array.isArray(data.steps) && data.steps.length > 0) {
+        html += '<ol class="mb-3">';
+        data.steps.forEach(step => {
+          html += '<li class="mb-4">';
+          html += `<p>${step.text}</p>`;
+          if (step.url) {
+            html += `<p><a href="${step.url}" target="_blank">${step.url}</a></p>`;
+          }
+          if (step.screenshot) {
+            html += `<img src="${step.screenshot}" alt="${step.alt || ''}" class="img-fluid rounded shadow-sm">`;
+          }
+          html += '</li>';
+        });
+        html += '</ol>';
+      }
+
+      return html;
     }
 
-    try {
-        btnEnviar.disabled = true;
-        btnEnviar.innerText = "Enviando...";
-        //const BASE_URL = "https://clasificador-inteligente.onrender.com";
-        // ✅ Usa HTTP local (backend)
-        const BASE_URL = "http://localhost:8080";
+    async function enviarPregunta() {
+      const pregunta = document.getElementById('preguntaInput').value.trim();
+      const respuestaElem = document.getElementById('respuestaFaq');
+      const btnEnviar = document.getElementById('btnEnviar');
 
+      respuestaElem.className = '';
+      respuestaElem.innerHTML = '';
+
+      if (!pregunta) {
+        respuestaElem.className = 'alert alert-warning';
+        respuestaElem.innerText = 'Por favor, escribe una pregunta.';
+        return;
+      }
+
+      try {
+        btnEnviar.disabled = true;
+        btnEnviar.innerText = 'Enviando...';
+
+        const BASE_URL = 'http://localhost:8080';
         const response = await fetch(`${BASE_URL}/api/faq/responder`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(pregunta)  // Enviamos el string directo
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(pregunta)
         });
 
         if (!response.ok) {
-            throw new Error(`Error en la solicitud: ${response.status}`);
+          throw new Error(`Error en la solicitud: ${response.status}`);
         }
 
         const data = await response.json();
-        respuestaElem.className = 'alert alert-success';
 
-        if (data.Respuesta) {
-            respuestaElem.innerHTML = `<strong>Respuesta:</strong> ${data.Respuesta}`;
-        } else {
-            respuestaElem.innerHTML = `<strong>No se pudo generar una respuesta adecuada.</strong>`;
-        }
+        // Mostrar la guía paso-a-paso o el mensaje de fallback
+        respuestaElem.className = 'alert alert-light';
+        respuestaElem.innerHTML = renderFaqResponse(data);
 
-    } catch (error) {
+      } catch (error) {
         respuestaElem.className = 'alert alert-danger';
-        respuestaElem.innerText = "Ocurrió un error al enviar la pregunta.";
+        respuestaElem.innerText = 'Ocurrió un error al enviar la pregunta.';
         console.error(error);
-    } finally {
+      } finally {
         btnEnviar.disabled = false;
-        btnEnviar.innerText = "Enviar";
+        btnEnviar.innerText = 'Enviar';
+      }
     }
-}
-</script>
-
-
+  </script>
 </body>
+
 </html>

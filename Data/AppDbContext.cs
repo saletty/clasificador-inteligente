@@ -9,7 +9,6 @@ namespace ClasificadorComents.Data
         {
         }
 
-        public DbSet<PregFrec> Pregunta_Frecuente { get; set; }
         public DbSet<Usuario> Usuario { get; set; }
 
     }
