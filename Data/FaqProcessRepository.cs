@@ -41,9 +41,9 @@ namespace ClasificadorComents.Data
                 Steps = new List<ProcessStep>
                 {
                     new ProcessStep {
-                        Text = "Accede al portal https://perfil.uagrm.edu.bo como estudiante.",
+                        Text = "Accede al portal como estudiante.",
                         Url = "https://perfil.uagrm.edu.bo",
-                        Screenshot = "imgretiro1.png",
+                        Screenshot = "img/retiro/1.png",
                         Alt = "Portal UAGRM"
                     },
                     new ProcessStep {
