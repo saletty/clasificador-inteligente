@@ -228,7 +228,7 @@ namespace ClasificadorComents.Data
                     },
                     new ProcessStep {
                         Text = "Debes saber que, si la materia que deseas retirar fue levantada y tiene prerrequisitos en cadena, el sistema impide el retiro. Por Ejemplo: Si inscribiste Estructura de datos 1 y haces levantamiento para agarrar Base de datos 1, entonces no podrás retirar Estructura de datos 1 por que es prerrequisito para Base de datos 1."
-                    }
+                    },
                     new ProcessStep {
                         Text = "Luego puedes seleccionar la materia que quieres retirar.",
                         Screenshot = "paginas/img/retiro/15.png",
