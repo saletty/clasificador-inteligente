@@ -84,6 +84,39 @@
     padding-top: 10px;
   }
 }
+@media (max-width: 768px) {
+  .logo img {
+    height: 60px;
+    width: 60px;
+  }
+
+  .navbar {
+    padding: 8px 16px;
+  }
+
+  .logo-text {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .form-control-lg {
+    font-size: 1rem;
+  }
+
+  .btn-lg {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
 
 /* Ajuste general para que el contenido no quede oculto detrás de la navbar */
 body {
@@ -195,7 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
             html += `<p><a href="${step.url}" target="_blank">${step.url}</a></p>`;
           }
           if (step.screenshot) {
-            html += `<img src="${step.screenshot}" alt="${step.alt || ''}" class="img-fluid rounded shadow-sm">`;
+            html += `<img src="/${step.screenshot}" alt="${step.alt || ''}" class="img-fluid rounded shadow-sm" loading="lazy" style="max-width:100%; height:auto;">`;
           }
           html += '</li>';
         });
