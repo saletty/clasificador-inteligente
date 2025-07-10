@@ -85,6 +85,16 @@ namespace ClasificadorComents.Data
                         Text = "Presiona el botón 'Generar Servicio' para habilitar el trámite.",
                         Screenshot = "img/retiro/9.png",
                         Alt = "Generar servicio de retiro"
+                    },
+                    new ProcessStep {
+                        Text = "Seleccionamos el método de pago.",
+                        Screenshot = "img/retiro/10.png",
+                        Alt = "Selección método de pago"
+                    },
+                    new ProcessStep {
+                        Text = "Una vez ya realizado debe al cabo de un rato debe aparecer en Pagos Realizados",
+                        Screenshot = "img/retiro/11.png",
+                        Alt = "Selección método de pago"
                     }
                 }
             }
