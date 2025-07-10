@@ -1,5 +1,6 @@
 ﻿using ClasificadorComents.Models;
 using System.Collections.Generic;
+using static System.Net.WebRequestMethods;
 
 namespace ClasificadorComents.Data
 {
@@ -31,7 +32,64 @@ namespace ClasificadorComents.Data
                     new ProcessStep { Text = "Elige el curso y el horario.", Screenshot="img/verano/2.png", Alt="Selección curso verano" },
                     new ProcessStep { Text = "Realiza el pago de matrícula.", Screenshot="img/verano/3.png", Alt="Pago matrícula verano" }
                 }
+            },
+
+             new FaqProcess
+             {
+                Title = "Pasos para habilitar retiro de materia",
+                Intro = "Cabe decir que en cada semestre el primer retiro y adición de materia es gratuito. A continuación se detallan los pasos para habilitar el retiro:",
+                Steps = new List<ProcessStep>
+                {
+                    new ProcessStep {
+                        Text = "Accede al portal https://perfil.uagrm.edu.bo como estudiante.",
+                        Url = "https://perfil.uagrm.edu.bo",
+                        Screenshot = "img/retiro/1.png",
+                        Alt = "Portal UAGRM"
+                    },
+                    new ProcessStep {
+                        Text = "Inicia sesión utilizando tu código de registro estudiantil y contraseña.",
+                        Screenshot = "img/retiro/2.png",
+                        Alt = "Inicio de sesión"
+                    },
+                    new ProcessStep {
+                        Text = "Selecciona 'Solicitar servicio' desde la barra lateral izquierda.",
+                        Screenshot = "img/retiro/3.png",
+                        Alt = "Solicitar servicio"
+                    },
+                    new ProcessStep {
+                        Text = "Haz clic en el botón verde para abrir el Sistema de Consultas de Caja.",
+                        Screenshot = "img/retiro/4.png",
+                        Alt = "Botón verde para habilitar servicios"
+                    },
+                    new ProcessStep {
+                        Text = "Dirígete a 'Pagos / Servicios'.",
+                        Screenshot = "img/retiro/5.png",
+                        Alt = "Menú pagos y servicios"
+                    },
+                    new ProcessStep {
+                        Text = "Selecciona 'Solicitar Servicios'.",
+                        Screenshot = "img/retiro/6.png",
+                        Alt = "Opción solicitar servicios"
+                    },
+                    new ProcessStep {
+                        Text = "Haz clic en 'Solicitar Nuevo Servicio'.",
+                        Screenshot = "img/retiro/7.png",
+                        Alt = "Solicitud nuevo servicio"
+                    },
+                    new ProcessStep {
+                        Text = "Elige la opción 'Retiro De Materias'.",
+                        Screenshot = "img/retiro/8.png",
+                        Alt = "Selección retiro de materias"
+                    },
+                    new ProcessStep {
+                        Text = "Presiona el botón 'Generar Servicio' para habilitar el trámite.",
+                        Screenshot = "img/retiro/9.png",
+                        Alt = "Generar servicio de retiro"
+                    }
+                }
             }
+
+
 
             // Agrega más procesos según necesites…
         };
