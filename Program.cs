@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ClasificadorComents.Data;
+using ClasificadorComents.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,10 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     )
 );
 
+
+builder.Services.AddControllers();
+builder.Services.AddHttpClient();
+
 // CORS (permite solicitudes del mismo dominio)
 builder.Services.AddCors(options =>
 {
@@ -25,9 +30,12 @@ builder.Services.AddCors(options =>
               .AllowAnyMethod();
     });
 });
-builder.Services.AddHttpClient();
-builder.Services.AddControllers();
+
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddSingleton<FaqProcessService>();
+
+
 
 
 var app = builder.Build();

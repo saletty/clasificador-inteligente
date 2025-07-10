@@ -1,4 +1,4 @@
-﻿       using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using ClasificadorComents.Models;
 using ClasificadorComents.Services;
 
@@ -34,7 +34,6 @@ namespace ClasificadorComents.Controllers
                     Steps = new List<ProcessStep>()
                 });
             }
-
             // Devolvemos el proceso completo (Title, Intro, Steps[])
             return Ok(proceso);
         }
