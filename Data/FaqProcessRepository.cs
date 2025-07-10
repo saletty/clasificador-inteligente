@@ -53,47 +53,47 @@ namespace ClasificadorComents.Data
                     },
                     new ProcessStep {
                         Text = "Selecciona 'Solicitar servicio' desde la barra lateral izquierda.",
-                        Screenshot = "img/retiro/3.png",
+                        Screenshot = "paginas/img/retiro/3.png",
                         Alt = "Solicitar servicio"
                     },
                     new ProcessStep {
                         Text = "Haz clic en el botón verde para abrir el Sistema de Consultas de Caja.",
-                        Screenshot = "img/retiro/4.png",
+                        Screenshot = "paginas/img/retiro/4.png",
                         Alt = "Botón verde para habilitar servicios"
                     },
                     new ProcessStep {
                         Text = "Dirígete a 'Pagos / Servicios'.",
-                        Screenshot = "img/retiro/5.png",
+                        Screenshot = "paginas/img/retiro/5.png",
                         Alt = "Menú pagos y servicios"
                     },
                     new ProcessStep {
                         Text = "Selecciona 'Solicitar Servicios'.",
-                        Screenshot = "img/retiro/6.png",
+                        Screenshot = "paginas/img/retiro/6.png",
                         Alt = "Opción solicitar servicios"
                     },
                     new ProcessStep {
                         Text = "Haz clic en 'Solicitar Nuevo Servicio'.",
-                        Screenshot = "img/retiro/7.png",
+                        Screenshot = "paginas/img/retiro/7.png",
                         Alt = "Solicitud nuevo servicio"
                     },
                     new ProcessStep {
                         Text = "Elige la opción 'Retiro De Materias'.",
-                        Screenshot = "img/retiro/8.png",
+                        Screenshot = "paginas/img/retiro/8.png",
                         Alt = "Selección retiro de materias"
                     },
                     new ProcessStep {
                         Text = "Presiona el botón 'Generar Servicio' para habilitar el trámite.",
-                        Screenshot = "img/retiro/9.png",
+                        Screenshot = "paginas/img/retiro/9.png",
                         Alt = "Generar servicio de retiro"
                     },
                     new ProcessStep {
                         Text = "Seleccionamos el método de pago.",
-                        Screenshot = "img/retiro/10.png",
+                        Screenshot = "paginas/img/retiro/10.png",
                         Alt = "Selección método de pago"
                     },
                     new ProcessStep {
                         Text = "Una vez ya realizado debe al cabo de un rato debe aparecer en Pagos Realizados",
-                        Screenshot = "img/retiro/11.png",
+                        Screenshot = "paginas/img/retiro/11.png",
                         Alt = "Selección método de pago"
                     }
                 }
