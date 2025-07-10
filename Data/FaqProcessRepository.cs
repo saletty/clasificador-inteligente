@@ -43,12 +43,12 @@ namespace ClasificadorComents.Data
                     new ProcessStep {
                         Text = "Accede al portal como estudiante.",
                         Url = "https://perfil.uagrm.edu.bo",
-                        Screenshot = "img/retiro/1.png",
+                        Screenshot = "paginas/img/retiro/1.png",
                         Alt = "Portal UAGRM"
                     },
                     new ProcessStep {
                         Text = "Inicia sesión utilizando tu código de registro estudiantil y contraseña.",
-                        Screenshot = "img/retiro/2.png",
+                        Screenshot = "paginas/img/retiro/2.png",
                         Alt = "Inicio de sesión"
                     },
                     new ProcessStep {
